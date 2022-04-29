@@ -1,0 +1,129 @@
+
+
+/*INICIO ESTILOS COLABORADORES*/
+.colabH1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.contenidoCol{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin-left: 20px;
+    
+
+    .colH1{
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .infoCol{
+        margin-top: 20px;
+    
+    }
+    
+    .imgCol{
+        width: 90%;
+        height: 250px;
+        margin-right: 20px;
+    }
+    
+    .imgCol:hover{
+        animation: headShake; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s; /* don't forget to set a duration! */
+    }
+    
+} 
+/*FIN ESTILOS COLABORADORES*/
+
+/*INICIO MEDIAQUERIES COLABORADORES*/
+@media screen and (max-width: 600px) {
+    .contenidoCol{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-content: center;
+        justify-items: center;
+
+        .colabH1{
+            font-size: 20px;
+            margin-top: 40px;
+        }
+    
+        .linea{
+            width: 100%;
+        }
+    
+        .imgCol{
+            width: 90%;
+        }
+    
+        .colH1{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width:601px) and (max-width:900px){
+    .contenidoCol{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        align-content: center;
+        justify-items: center;
+
+        .colabH1{
+            font-size: 20px;
+            margin-top: 60px;
+        }
+    
+        .linea{
+            width: 100%;
+        }
+    
+        .imgCol{
+            width: 90%;
+        }
+    
+        .colH1{
+            width: 100%;
+        }
+    }
+} 
+
+@media (min-width:901px) and (max-width:1024px){
+    .contenidoCol{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        align-content: center;
+        justify-items: center;
+        
+        .colabH1{
+            font-size: 20px;
+            margin-top: 60px;
+        }
+    
+        .linea{
+            width: 100%;
+        }
+    
+        .imgCol{
+            width: 90%;
+        }
+    
+        .colH1{
+            width: 100%;
+        }
+    }
+}
+/*FIN MEDIAQUERIES COLABORADORES*/
+

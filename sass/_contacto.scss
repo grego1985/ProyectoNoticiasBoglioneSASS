@@ -1,0 +1,273 @@
+/*INICIO ESTILOS CONTACTO*/
+.conH1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.contGeneral{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: stretch;
+
+    .formCont{
+        margin-left: 20px;
+    }
+    
+    .mapaCont{
+        margin-right: 30px;
+        animation: jello;
+        animation-duration: 2s; 
+    }
+    
+    .input{
+        background: silver;
+        border: 1px solid #393939;
+        border-radius: 5px 5px 5px 5px;
+        color: #393939;
+        font-size: 14px;
+        padding: 5px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    
+    .inputArea{
+        background: silver;
+        border: 1px solid #393939;
+        border-radius: 5px 5px 5px 5px;
+        color: #393939;
+        font-size: 14px;
+        padding: 5px;
+        margin-bottom: 30px;   
+    }
+    
+    .formLabel{
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        color: white;
+        font-size: 16px;
+    }
+    
+    .formBoton{
+        padding: 15px;
+        margin-right: 10px;
+        background-color: white;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        border: 0;
+        color: $colorFondo;
+        border-radius: 5px;
+        margin-bottom: 15px;    
+    }
+    
+    .formBoton:hover{
+        background-color: $colorFondo;
+        color: white;
+        border: 1px solid white;
+    }
+    
+    .botonTran:hover{
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+        padding-right: 100px;
+        align-items: center;    
+    }
+    
+    .infoCont{
+        margin-left: 120px;
+    }
+    
+    .labelMapa{
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        color: white;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .labelDatos{
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        color: white;
+        font-size: 18px;
+        margin-right: 20px; 
+        margin-bottom: 40px;
+    }
+}
+
+
+/*FIN ESTILOS CONTACTO*/
+/*INICIO MEDIEAQUERIES CONTACTO*/
+@media screen and (max-width: 600px) {
+
+    .contGeneral{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-content: center;
+        justify-items: center;
+
+        .conH1{
+            font-size: 20px;
+            margin-top: 40px;
+        }
+    
+        .linea{
+            width: 100%;
+        }
+        .formCont{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            margin-bottom: 20px;
+        }
+    
+        .formLabel{
+            font-size: 14px;
+        }
+    
+        .input{
+            width: 180px;
+        }
+    
+        .inputArea{
+            width: 180px;
+        }
+    
+        .formBoton{
+            width: 80px;
+            height: 40px;
+            font-size: 10px;
+        }
+    
+        .infoCont{
+            margin: 0;
+        }   
+    
+        .labelMapa{
+            font-size: 16px;
+        }
+    
+        .labelDatos{
+            font-size: 14px;
+        }
+    
+        .mapaCont{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            align-content: center;
+            justify-items: center;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width:601px) and (max-width:900px){
+    .contGeneral{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        align-content: start;
+        justify-items: start;
+
+        .conH1{
+            margin-top: 60px;
+        }
+    
+        .formLabel{
+            font-size: 14px;
+        }
+    
+        .input{
+            width: 180px;
+        }
+    
+        .inputArea{
+            width: 180px;
+        }
+    
+        .formBoton{
+            width: 80px;
+            height: 40px;
+            font-size: 10px;
+        }
+    
+        .infoCont{
+            margin: 0;
+        }   
+    
+        .labelMapa{
+            font-size: 20px;
+        }
+    
+        .labelDatos{
+            font-size: 16px;
+        }
+    
+        .mapaCont{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            align-content: center;
+            justify-items: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (min-width:901px) and (max-width:1024px){
+    .contGeneral{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        align-content: start;
+        justify-items: start;
+
+        .conH1{
+            margin-top: 60px;
+        }
+        
+        .formLabel{
+            font-size: 16px;
+        }
+    
+        .input{
+            width: 180px;
+        }
+    
+        .inputArea{
+            width: 180px;
+        }
+    
+        .infoCont{
+            margin: 0;
+            margin-left: 20px;
+        }   
+    
+        .labelMapa{
+            font-size: 28px;
+        }
+    
+        .labelDatos{
+            font-size: 24px;
+        }
+    
+        .mapaCont{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            align-content: center;
+            justify-items: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+/*FIN MEDIEAQUERIES CONTACTO*/
